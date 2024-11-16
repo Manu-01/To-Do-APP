@@ -23,6 +23,8 @@ function App() {
     updatedTodoArr.push(newTodoItem);
     setTodos(updatedTodoArr);
     localStorage.setItem('todolist', JSON.stringify(updatedTodoArr));
+    setNewTitle('');
+    setNewDescription('')
   };
 
   const handleDeleteTodo = index => {
